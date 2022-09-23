@@ -27,3 +27,10 @@ list_animales = ['Gat', 'Gos', 'Tortuga', 'Serpiente']
 legs_list = [4,4,4,0]
 serie_animales= pd.Series(data=legs_list, dtype=float, index=list_animales)
 print(serie_animales)
+
+# Test dataframes
+# Com en el cas de les series,.
+dict_animals = {'num_legs': [2, 4, 0, 8, 6], 'num_wings': [2, 0, 0, 0, 4], 'can_fly': [True, False, False, False, True]}
+name_animals = ['falcon', 'dog', 'snail', 'spider', 'butterfly']
+df_animals = pd.DataFrame(data=dict_animals, index=name_animals)
+print(df_animals)
