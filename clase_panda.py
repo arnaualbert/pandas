@@ -22,3 +22,8 @@ list_bestseries = ['Casa Papel', 'Casa Dragon', 'Merli', 'Plats Bruts']
 serie_bestseries = pd.Series(data=list_bestseries, dtype="string")
 print(serie_bestseries)
 
+#serie noms animals
+list_animales = ['Gat', 'Gos', 'Tortuga', 'Serpiente']
+legs_list = [4,4,4,0]
+serie_animales= pd.Series(data=legs_list, dtype="string", index=list_animales)
+print(serie_animales)
