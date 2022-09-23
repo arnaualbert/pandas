@@ -34,3 +34,29 @@ dict_animals = {'num_legs': [2, 4, 0, 8, 6], 'num_wings': [2, 0, 0, 0, 4], 'can_
 name_animals = ['falcon', 'dog', 'snail', 'spider', 'butterfly']
 df_animals = pd.DataFrame(data=dict_animals, index=name_animals)
 print(df_animals)
+
+df2 = pd.DataFrame(
+    {
+        "A": 1.0,
+        "B": pd.Timestamp("20130102"),
+        "C": pd.Series(1, index=list(range(4)), dtype="float32"),
+        "D": np.array([3] * 4, dtype="int32"),
+        "E": pd.Categorical(["test", "train", "test", "train"]),
+        "F": "foo",
+    }
+)
+
+
+
+
+animals_df = pd.Series(data=['falcon', 'dog', 'snail', 'spider'], dtype="string")
+df3 = pd.DataFrame(
+    {
+        "A": [1.0] + [np.nan] * 2 + [3.0],
+        "B": pd.date_range("20220101", periods=4, freq='D'),
+        "C": animals_df,
+        "D": pd.Categorical(["Male", "Female", "NS/NC", "Female"]),
+        "E": "foo",
+    }
+)
+print(df3)
