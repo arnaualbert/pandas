@@ -104,6 +104,10 @@ print(myvar)
 
 ## DataFrame
 
+Un DataFrame es una tabla
+
+Las series vienen a ser una columna en cambio un dataframe es la tabla entera
+
 ```python
 import pandas as pd
 
@@ -123,4 +127,25 @@ print(myvar)
 # 2   Ford         2
 
 
+```
+
+Asi se crea un dataframe
+
+```python
+import pandas as pd
+
+data = {
+  "calories": [420, 380, 390],
+  "duration": [50, 40, 45]
+}
+
+myvar = pd.DataFrame(data)
+
+print(myvar)
+
+#print 
+#    calories  duration
+# 0       420        50
+# 1       380        40
+# 2       390        45
 ```
