@@ -51,7 +51,9 @@ print(myvar)
 # dtype: int64
 
 # print del primer valor de la serie
+
 print(myvar[0])
+
 # print:
 #1
 ```
@@ -76,7 +78,49 @@ print(myvar)
 # dtype: int64
 
 # si ahora queremos llamar al 7 lo haremos de la siguiente manera
+
 print(myvar["y"])
+
 #print:
 #7
+```
+
+### Key/Values Objects as Series
+
+Tambien se pueden crear series a partir de un diccionario
+
+Las claves de los diccionarios se vuelven los indices
+
+```python
+import pandas as pd
+
+calories = {"day1": 420, "day2": 380, "day3": 390}
+
+myvar = pd.Series(calories)
+
+print(myvar)
+
+# print:
+# day1    420
+# day2    380
+# day3    390
+# dtype: int64
+
+```
+
+Se puede llamar a los indices que tu quieras poniendo la llave del diccionario
+
+```python
+import pandas as pd
+
+calories = {"day1": 400, "day2": 380, "day3": 390}
+
+myvar = pd.Series(calories, index = [ "day2", "day3"])
+
+print(myvar)
+
+# print
+# day2    380
+# day3    390
+# dtype: object
 ```
