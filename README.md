@@ -1,12 +1,12 @@
-Pandas Notes
+# Pandas Notes
 
-### Iniciar Pandas
+## Iniciar Pandas
 
 ```python
 import pandas 
 ```
 
-### DataFrame
+## DataFrame
 
 ```python
 import pandas as pd
