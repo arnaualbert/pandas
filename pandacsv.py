@@ -21,7 +21,7 @@ entries2 = copy.deepcopy(entries)
 
 
 bad_entries_mask = (entries2.loc[:,"H index"] < 750)
-entries2.loc[bad_entries_mask,"H index"] = 0;
+entries2.loc[bad_entries_mask,"H index"] = 0,
 entries2.sort_values(by=["H index"], 
                           axis=0, 
                           ascending=False).head(5)
