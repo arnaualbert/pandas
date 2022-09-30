@@ -29,7 +29,7 @@ print(myvar)
 
 ```
 
-### Series
+## Series
 
 Una serie es un array que puede tener todo tipos de datos
 
@@ -56,7 +56,7 @@ print(myvar[0])
 #1
 ```
 
-## Labels de series
+### Labels de series
 
 Para crear el propio Label (index) se hace con la funcion index y con una lista(array)
 
