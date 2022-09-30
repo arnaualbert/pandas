@@ -55,3 +55,23 @@ print(myvar[0])
 # print:
 #1
 ```
+
+## Labels de series
+
+Para crear el propio Label (index) se hace con la funcion index y con una lista(array)
+
+```python
+import pandas as pd
+
+a = [1, 7, 2]
+
+myvar = pd.Series(a, index = ["x", "y", "z"])
+
+print(myvar)
+
+#print :
+# x    1
+# y    7
+# z    2
+# dtype: int64
+```
