@@ -74,4 +74,9 @@ print(myvar)
 # y    7
 # z    2
 # dtype: int64
+
+# si ahora queremos llamar al 7 lo haremos de la siguiente manera
+print(myvar["y"])
+#print:
+#7
 ```
