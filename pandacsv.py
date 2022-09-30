@@ -6,3 +6,6 @@ print(entries.loc[:,"Rank"]) # solo printea los rank
 print(entries.loc[:,"Rank"].dtype) # printa el tipus del Rank
 print(entries.dtypes) # printa tots els tipus
 print(entries.index)#Mostra els index de cada fila
+entries_high = entries.loc[:,"H index"] >= 450
+entries_ok = entries.loc[entries_high,:]
+print(entries_ok)
