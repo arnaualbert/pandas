@@ -149,3 +149,41 @@ print(myvar)
 # 1       380        40
 # 2       390        45
 ```
+
+Para devolver una fila de un dataframe lo que seria una serie se hace asi:
+
+```python
+import pandas as pd
+
+data = {
+  "calories": [420, 380, 390],
+  "duration": [50, 40, 45]
+}
+
+myvar = pd.DataFrame(data)
+
+print(myvar)
+
+#print 
+#    calories  duration
+# 0       420        50
+# 1       380        40
+# 2       390        45
+
+# para acceder asolo la line 0 de el dataframe seria asi:
+
+print(df.loc[0])
+#   print
+#   calories    420
+#   duration     50
+#   Name: 0, dtype: int64
+
+# tambien se pueden acceder a mas de una
+print(df.loc[0,1])
+# print
+
+#      calories  duration
+#   0       420        50
+#   1       380        40
+```
+Se pueden poner nombres a los indices
