@@ -258,3 +258,8 @@ print(df)
 #   [169 rows x 4 columns]
 
 ```
+
+### Funciones en un dataframe
+
+Hay diferentes funciones que se puedan aplicar sobre un dataframe como las siguientes
+
