@@ -232,7 +232,7 @@ print(df.loc["day2"])
 #   duration     40
 #   Name: 0, dtype: int64
 ```
-En un dataframe se puede cargar un archivo en un dataframe
+Se puede cargar un archivo en un dataframe
 
 ```python
 import pandas as pd
