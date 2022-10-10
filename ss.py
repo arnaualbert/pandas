@@ -1,5 +1,6 @@
 import numpy as np 
 import pandas as pd
+import matplotlib.pyplot as plt
 #np --> numerical panda, es una llibreria per a realitzar càlcul numèric
 #les notes de dawbio amb series
 student_list=["John","Mary","Lucy","Peter"]
@@ -12,3 +13,4 @@ students_frame = pd.DataFrame(
     data = datos
 )
 students_frame.loc[:,"grade"].plot(kind="bar")
+plt.show()
